@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLSchemes</key>
+	<array>
+		<string>iosdevkundan.LoginApp</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>com.googleusercontent.apps.YOUR_CLIENT_ID</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.46945545577-p994fmn09j9d1ss10ucns3qc2ao0a9tc</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
