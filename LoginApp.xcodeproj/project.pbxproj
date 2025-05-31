@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE22E35D2DEB052C007B2210 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE22E35C2DEB052C007B2210 /* IQKeyboardManagerSwift */; };
+		CE22E3602DEB091A007B2210 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CE22E35F2DEB091A007B2210 /* ProgressHUD */; };
+		CE22E3812DEB3F92007B2210 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE22E3802DEB3F92007B2210 /* FirebaseDatabase */; };
 		CE3F01CC2D76D6FE00D119D2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE3F01CB2D76D6FE00D119D2 /* FirebaseAuth */; };
 		CE3F01CE2D76D6FE00D119D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE3F01CD2D76D6FE00D119D2 /* FirebaseFirestore */; };
 		CE3F01D02D76D6FE00D119D2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CE3F01CF2D76D6FE00D119D2 /* FirebaseStorage */; };
@@ -74,10 +77,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE456CC92D7C54E400161A74 /* GoogleSignInSwift in Frameworks */,
+				CE22E3602DEB091A007B2210 /* ProgressHUD in Frameworks */,
 				CE3F01CC2D76D6FE00D119D2 /* FirebaseAuth in Frameworks */,
 				CE456CC72D7C54E400161A74 /* GoogleSignIn in Frameworks */,
 				CE3F01CE2D76D6FE00D119D2 /* FirebaseFirestore in Frameworks */,
 				CE3F01D02D76D6FE00D119D2 /* FirebaseStorage in Frameworks */,
+				CE22E3812DEB3F92007B2210 /* FirebaseDatabase in Frameworks */,
+				CE22E35D2DEB052C007B2210 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE22E37F2DEB3F92007B2210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE3F01922D76CDB000D119D2 = {
 			isa = PBXGroup;
 			children = (
 				CE3F019D2D76CDB000D119D2 /* LoginApp */,
 				CE3F01AE2D76CDB200D119D2 /* LoginAppTests */,
 				CE3F01B82D76CDB200D119D2 /* LoginAppUITests */,
+				CE22E37F2DEB3F92007B2210 /* Frameworks */,
 				CE3F019C2D76CDB000D119D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +157,9 @@
 				CE3F01CF2D76D6FE00D119D2 /* FirebaseStorage */,
 				CE456CC62D7C54E400161A74 /* GoogleSignIn */,
 				CE456CC82D7C54E400161A74 /* GoogleSignInSwift */,
+				CE22E35C2DEB052C007B2210 /* IQKeyboardManagerSwift */,
+				CE22E35F2DEB091A007B2210 /* ProgressHUD */,
+				CE22E3802DEB3F92007B2210 /* FirebaseDatabase */,
 			);
 			productName = LoginApp;
 			productReference = CE3F019B2D76CDB000D119D2 /* LoginApp.app */;
@@ -229,6 +246,8 @@
 			packageReferences = (
 				CE3F01CA2D76D6FE00D119D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				CE456CC52D7C54E400161A74 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				CE22E35B2DEB052C007B2210 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				CE22E35E2DEB091A007B2210 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE3F019C2D76CDB000D119D2 /* Products */;
@@ -440,9 +459,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +468,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,9 +495,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +504,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iosdevkundan.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -599,6 +624,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE22E35B2DEB052C007B2210 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+		CE22E35E2DEB091A007B2210 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.3;
+			};
+		};
 		CE3F01CA2D76D6FE00D119D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -618,6 +659,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE22E35C2DEB052C007B2210 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE22E35B2DEB052C007B2210 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		CE22E35F2DEB091A007B2210 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE22E35E2DEB091A007B2210 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		CE22E3802DEB3F92007B2210 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3F01CA2D76D6FE00D119D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		CE3F01CB2D76D6FE00D119D2 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE3F01CA2D76D6FE00D119D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

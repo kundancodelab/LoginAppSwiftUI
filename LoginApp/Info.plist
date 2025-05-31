@@ -6,8 +6,6 @@
 	<array>
 		<string>iosdevkundan.LoginApp</string>
 	</array>
-	<key>CFBundleIdentifier</key>
-	<string></string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
